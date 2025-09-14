@@ -8,7 +8,7 @@ theme = "PaperMod"
 # 在 [params] 的下面添加这段
 [params.homeInfoParams]
   Title = "Hello 👋"
-  Content = "欢迎来到阿宇的成长日志。在这里，我会分享关于 Web3、代币经济和个人成长的思考与记录。"4
+  Content = "欢迎来到阿宇的成长日志。在这里，我会分享关于 Web3、代币经济和个人成长的思考与记录。"
 
 # 个人资料模式配置
 [params.profileMode]

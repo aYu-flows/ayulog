@@ -5,7 +5,6 @@ theme = "PaperMod"
 
 # 这是 PaperMod 主题需要的核心参数段落
 [params]
-assets.favicon = "favicon.ico"
 
 # 在 [params] 的下面添加这段
 [params.homeInfoParams]

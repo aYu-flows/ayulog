@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>阿宇的成长日志</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 阿宇的成长日志</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Sep 2025 17:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简化的交互模拟环境 - 动态 MVP 原型</title>
+      <link>http://localhost:1313/growth_journal/test_article1/</link>
+      <pubDate>Sat, 13 Sep 2025 17:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/growth_journal/test_article1/</guid>
+      <description>&lt;h1 id=&#34;简化的交互模拟环境---动态-mvp-原型&#34;&gt;简化的交互模拟环境 - 动态 MVP 原型&lt;/h1&gt;
+&lt;p&gt;你好，我是阿宇。&lt;/p&gt;
+&lt;p&gt;这是根据您的需求，为您构建的一个&lt;strong&gt;动态、可交互的语言模型模拟环境&lt;/strong&gt;的最小可行产品（MVP）原型。&lt;/p&gt;
+&lt;p&gt;其中包含了三个经济周期（繁荣、平稳、衰退），及多个模拟工具（查询余额、工作赚钱、现金流预测）。&lt;/p&gt;
+&lt;p&gt;它不仅实现了您提出的所有核心功能，更重要的是，它旨在展示一个&lt;strong&gt;清晰、模块化、且极易扩展&lt;/strong&gt;的系统架构。这证明了我们未来合作的基础，将是非常坚实和专业的。&lt;/p&gt;
+&lt;p&gt;备注：API 接口后续可通过&amp;quot;basic_tools.py&amp;quot;文件中提供的工具来发布&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;核心设计理念&#34;&gt;核心设计理念&lt;/h2&gt;
+&lt;p&gt;这个 MVP 遵循三大核心设计原则，以确保其长期的健壮性与可维护性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置与代码分离 (Decoupling)&lt;/strong&gt;: 所有的场景参数（如经济周期、初始现金、总天数）都在 &lt;code&gt;configs/scene_config.yaml&lt;/code&gt; 中进行定义。这意味着，您可以像一个“游戏设计师”一样，随时调整“世界”的规则，而无需触碰任何一行核心代码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模块化的工具库 (Modularization)&lt;/strong&gt;: 所有的“智能体工具”都在 &lt;code&gt;tools/&lt;/code&gt; 目录下进行独立定义。这实现了功能的“即插即用”。您可以轻松地在 &lt;code&gt;tools/basic_tools.py&lt;/code&gt; 文件中添加新的 Python 函数，来赋予智能体全新的能力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;清晰的事件循环 (Clean Event Loop)&lt;/strong&gt;: &lt;code&gt;main.py&lt;/code&gt; 中的核心逻辑，严格遵循“环境更新 -&amp;gt; 智能体行动 -&amp;gt; 系统结算”的清晰循环。这保证了模拟过程的逻辑严谨性，也为未来引入更复杂的事件和交互，提供了稳固的框架。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;mvp-功能演示&#34;&gt;MVP 功能演示&lt;/h2&gt;
+&lt;p&gt;这个 MVP 已经实现了一个&lt;strong&gt;动态的、有生命的&lt;/strong&gt;小型世界：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;动态的环境&lt;/strong&gt;: &lt;code&gt;economic_cycle&lt;/code&gt;（经济周期）参数会在每一轮（天）模拟中，有概率&lt;strong&gt;随机发生变化&lt;/strong&gt;（繁荣/平稳/衰退），为智能体带来了不可预测的挑战。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有后果的行动&lt;/strong&gt;: 智能体现在可以使用 &lt;code&gt;工作赚钱&lt;/code&gt; 这个新工具。这个工具的产出（&lt;code&gt;earnings&lt;/code&gt;）会受到当前经济周期的直接影响，并&lt;strong&gt;真实地改变&lt;/strong&gt;智能体的最终得分（&lt;code&gt;cash&lt;/code&gt;值）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完整的评分机制&lt;/strong&gt;: 模拟结束后，系统会输出最终的&lt;code&gt;cash&lt;/code&gt;值，为您评估不同智能体在此环境下的“赚钱”能力，提供了一个清晰、量化的标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;如何运行&#34;&gt;如何运行&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;环境准备&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;请确保您的电脑已安装 Python。&lt;/li&gt;
+&lt;li&gt;安装必要的依赖库：&lt;code&gt;pip install pyyaml&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;运行模拟&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在项目根目录下，直接运行命令：&lt;code&gt;python main.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;按照终端的提示，输入智能体的行动指令（如 &lt;code&gt;工作赚钱&lt;/code&gt;、&lt;code&gt;查询余额&lt;/code&gt; 或 &lt;code&gt;跳过&lt;/code&gt;），即可体验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何扩展-核心价值&#34;&gt;如何扩展 (核心价值)&lt;/h2&gt;
+&lt;p&gt;这个架构的核心价值在于其&lt;strong&gt;极高的可扩展性&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;想增加一个新工具？&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

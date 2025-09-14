@@ -1,14 +1,19 @@
 baseURL = "https://www.ayulog.xyz/"
 languageCode = "zh-cn"              # 已修改为中文
-title = "阿宇的成长日志"                   # 修改为你自己的博客标题
+title = "aYu's web3 logs"                   # 修改为你自己的博客标题
 theme = "PaperMod"
 
 # 这是 PaperMod 主题需要的核心参数段落
 [params]
+# 在 [params] 的下面添加这段
+[params.homeInfoParams]
+  Title = "Hello 👋"
+  Content = "欢迎来到阿宇的成长日志。在这里，我会分享关于 Web3、代币经济和个人成长的思考与记录。"4
+
 # 个人资料模式配置
 [params.profileMode]
-enabled = true
-title = "阿宇 (aYu-flows)"                                                                   # 显示在头像下的名字
+enabled = false
+title = "aYu"                                                                   # 显示在头像下的名字
 subtitle = "协议级代币经济模型分析 | Web3 | 个人成长"                                                     # 一句简介
 imageUrl = "https://pbs.twimg.com/profile_images/1966702157790670849/EHdO4yup_400x400.jpg" # 在这里替换成你的头像图片链接, 例如 GitHub 头像
 imageTitle = "我的头像"

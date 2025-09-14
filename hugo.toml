@@ -37,25 +37,13 @@ url = "https://mirror.xyz/0x47d30F192071B38982Cee7bCE2C41De23F159Af9" # 替换�
 
 # 网站主菜单配置
 [[menu.main]]
-identifier = "archives"
-name = "归档"
-url = "/archives/"
-weight = 10
-
-[[menu.main]]
-identifier = "search"
-name = "搜索"
-url = "/search/"
-weight = 20
-
-[[menu.main]]
 identifier = "categories"
 name = "分类"
 url = "/categories/"
-weight = 30
+weight = 10
 
 [[menu.main]]
 identifier = "tags"
-name = "标签"
+name = "tags"
 url = "/tags/"
-weight = 40
+weight = 20

@@ -1,19 +1,19 @@
 baseURL = "https://www.ayulog.xyz/"
 languageCode = "zh-cn"              # 已修改为中文
-title = "aYu's web3 logs"                   # 修改为你自己的博客标题
+title = "aYu's web3 logs"           # 修改为你自己的博客标题
 theme = "PaperMod"
 
 # 这是 PaperMod 主题需要的核心参数段落
 [params]
 # 在 [params] 的下面添加这段
 [params.homeInfoParams]
-  Title = "Hello 👋"
-  Content = "欢迎来到阿宇的成长日志。在这里，我会分享关于 Web3、代币经济和个人成长的思考与记录。"
+Title = "Hello 👋"
+Content = "欢迎来到阿宇的成长日志。在这里，我会分享关于 Web3、代币经济和个人成长的思考与记录。"
 
 # 个人资料模式配置
 [params.profileMode]
 enabled = false
-title = "aYu"                                                                   # 显示在头像下的名字
+title = "aYu"                                                                              # 显示在头像下的名字
 subtitle = "协议级代币经济模型分析 | Web3 | 个人成长"                                                     # 一句简介
 imageUrl = "https://pbs.twimg.com/profile_images/1966702157790670849/EHdO4yup_400x400.jpg" # 在这里替换成你的头像图片链接, 例如 GitHub 头像
 imageTitle = "我的头像"
@@ -24,6 +24,15 @@ imageHeight = 120
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/aYu-flows" # 替换成你的 GitHub 主页链接
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/AyuFlows" # 替换成你的 GitHub 主页链接
+
+[[params.socialIcons]]
+name = "mirror"
+url = "https://mirror.xyz/0x47d30F192071B38982Cee7bCE2C41De23F159Af9" # 替换成你的 GitHub 主页链接
+
 
 # 网站主菜单配置
 [[menu.main]]
